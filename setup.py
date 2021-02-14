@@ -31,6 +31,9 @@ setup(
     packages=find_packages(),
     package_data=__pkg_data__,
 
+    version_config=True,
+    setup_requires=['setuptools-git-versioning'],
+
     entry_points="""
     [deluge.plugin.core]
     %s = deluge_%s:CorePlugin
